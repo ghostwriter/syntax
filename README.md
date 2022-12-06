@@ -1,24 +1,23 @@
-# wip
+# Plex
 
-[![Compliance](https://github.com/ghostwriter/wip/actions/workflows/compliance.yml/badge.svg)](https://github.com/ghostwriter/wip/actions/workflows/compliance.yml)
-[![Supported PHP Version](https://badgen.net/packagist/php/ghostwriter/wip?color=8892bf)](https://www.php.net/supported-versions)
-[![Type Coverage](https://shepherd.dev/github/ghostwriter/wip/coverage.svg)](https://shepherd.dev/github/ghostwriter/wip)
-[![Latest Version on Packagist](https://badgen.net/packagist/v/ghostwriter/wip)](https://packagist.org/packages/ghostwriter/wip)
-[![Downloads](https://badgen.net/packagist/dt/ghostwriter/wip?color=blue)](https://packagist.org/packages/ghostwriter/wip)
+[![Compliance](https://github.com/ghostwriter/plex/actions/workflows/compliance.yml/badge.svg)](https://github.com/ghostwriter/plex/actions/workflows/compliance.yml)
+[![Supported PHP Version](https://badgen.net/packagist/php/ghostwriter/plex?color=8892bf)](https://www.php.net/supported-versions)
+[![Type Coverage](https://shepherd.dev/github/ghostwriter/plex/coverage.svg)](https://shepherd.dev/github/ghostwriter/plex)
+[![Latest Version on Packagist](https://badgen.net/packagist/v/ghostwriter/plex)](https://packagist.org/packages/ghostwriter/plex)
+[![Downloads](https://badgen.net/packagist/dt/ghostwriter/plex?color=blue)](https://packagist.org/packages/ghostwriter/plex)
 
-work in progress
+Lexical Analysis library for PHP (Lexer, Tokenizer, Scanner, Parser, Generator)
 
 > **Warning**
 >
 > This project is not finished yet, work in progress.
-
 
 ## Installation
 
 You can install the package via composer:
 
 ``` bash
-composer require ghostwriter/wip
+composer require ghostwriter/plex
 ```
 
 ## Usage
@@ -48,7 +47,7 @@ If you discover any security related issues, please email `nathanael.esayeas@pro
 ## Credits
 
 - [Nathanael Esayeas](https://github.com/ghostwriter)
-- [All Contributors](https://github.com/ghostwriter/wip/contributors)
+- [All Contributors](https://github.com/ghostwriter/plex/contributors)
 
 ## License
 
