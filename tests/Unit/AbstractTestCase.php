@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\wip\Tests\Unit;
+namespace Ghostwriter\Plex\Lexer\Grammar\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 
