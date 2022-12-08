@@ -17,21 +17,7 @@ final class Token implements Stringable
         private int $trivia = 0,
         private int $start = 0,
         private int $width = 0
-    ) {
-        // "  text"
-        // 0,0,2,6
-
-        //        private int $kind = 0,
-        //        private int $trivia = 0,
-        //        private int $start = 2,
-        //        private int $width = 6
-
-        // Set(["kind","escapedText","originalKeywordKind","isInJSDocNamespace","text","flags","decorators",
-        //"modifiers","parent","getSourceFile","getChildCount","getChildAt","getChildren",
-        //"getStart",
-        //"getFullStart","getEnd","getWidth","getFullWidth","getLeadingTriviaWidth","getFullText","getText",
-        //"getFirstToken","getLastToken","forEachChild","pos","end",])],
-    }
+    ) {}
 
     public function __toString(): string
     {
