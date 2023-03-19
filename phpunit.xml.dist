@@ -2,25 +2,22 @@
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
          bootstrap="vendor/autoload.php"
-         cacheResultFile=".cache/phpunit/test-results.json"
+         cacheDirectory=".cache/phpunit"
          executionOrder="depends,defects"
-         forceCoversAnnotation="true"
-         beStrictAboutCoversAnnotation="true"
+         beStrictAboutCoverageMetadata="true"
          beStrictAboutOutputDuringTests="true"
          beStrictAboutTodoAnnotatedTests="true"
-         convertDeprecationsToExceptions="true"
+         stopOnFailure="true"
          failOnRisky="true"
          failOnWarning="true"
-         verbose="true"
          testdox="true"
          colors="true">
     <testsuites>
-        <testsuite name="Test Suite">
+        <testsuite name="Plex Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
-    <coverage cacheDirectory=".cache/phpunit/coverage"
-              processUncoveredFiles="true">
+    <coverage cacheDirectory=".cache/phpunit/coverage">
         <include>
             <directory suffix=".php">src</directory>
         </include>
