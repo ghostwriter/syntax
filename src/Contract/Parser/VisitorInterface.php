@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Plex\Contract\Parser;
+namespace Ghostwriter\Syntax\Contract\Parser;
 
 interface VisitorInterface
 {
