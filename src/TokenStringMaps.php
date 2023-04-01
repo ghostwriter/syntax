@@ -6,6 +6,9 @@ namespace Ghostwriter\Syntax;
 
 final class TokenStringMaps
 {
+    /**
+     * @var array<string, mixed>
+     */
     public const KEYWORDS = [
         'abstract' => TokenKind::AbstractKeyword,
         'and' => TokenKind::AndKeyword,
@@ -83,6 +86,9 @@ final class TokenStringMaps
         // TODO soft reserved words?
     ];
 
+    /**
+     * @var array<string, mixed>
+     */
     public const OPERATORS_AND_PUNCTUATORS = [
         '[' => TokenKind::OpenBracketToken,
         ']' => TokenKind::CloseBracketToken,
@@ -158,6 +164,9 @@ final class TokenStringMaps
         '`' => TokenKind::BacktickToken,
     ];
 
+    /**
+     * @var array<string, mixed>
+     */
     public const RESERVED_WORDS = [
         // http://php.net/manual/en/reserved.constants.php
         // TRUE, FALSE, NULL are special predefined constants
