@@ -12,6 +12,7 @@ Lexical Analysis library for PHP (Lexer, Tokenizer, Parser, Generator)
 >
 > This project is not finished yet, work in progress.
 
+
 ## Installation
 
 You can install the package via composer:
@@ -24,6 +25,15 @@ composer require ghostwriter/syntax
 
 ```php
 // work in progress
+```
+
+## Commands
+
+```bash
+# This is for development; dogfooding to parse and generate the AST for test fixture files.
+syntax /path/to/file.php 
+
+# Save or Update the AST of the PHP file as JSON file ['file.php => file.php.json'] in the same location.
 ```
 
 ## Testing
