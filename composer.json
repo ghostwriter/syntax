@@ -1,11 +1,15 @@
 {
     "name": "ghostwriter/syntax",
-    "description": "Here be dragons",
+    "description": "Lexical Analysis library for PHP",
     "license": "BSD-3-Clause",
     "type": "library",
     "keywords": [
+        "generator",
         "ghostwriter",
-        "syntax"
+        "lexer",
+        "parser",
+        "syntax",
+        "tokenizer"
     ],
     "authors": [
         {
@@ -31,22 +35,15 @@
     ],
     "require": {
         "php": ">=8.0,<8.3",
-        "ghostwriter/collection": "^0.5",
-        "ghostwriter/container": "^1.0",
-        "ghostwriter/event-dispatcher": "^1.0",
-        "ghostwriter/json": "^1.0",
-        "ghostwriter/option": "^1.0",
-        "ghostwriter/result": "^1.0"
+        "ghostwriter/collection": "^0.5.1",
+        "ghostwriter/container": "^1.4",
+        "ghostwriter/event-dispatcher": "^1.4",
+        "ghostwriter/json": "^1.1",
+        "ghostwriter/option": "^1.4",
+        "ghostwriter/result": "^1.2"
     },
     "require-dev": {
-        "infection/infection": "^0.26.15",
-        "nikic/php-parser": "^4.15.1",
-        "phpbench/phpbench": "^1.2",
-        "phpunit/phpunit": "^9.5.25",
-        "psalm/plugin-phpunit": "^0.17.0",
-        "rector/rector": "^0.14.5",
-        "symplify/easy-coding-standard": "^11.1.10",
-        "vimeo/psalm": "^4.27.0"
+        "ghostwriter/coding-standard": "dev-main"
     },
     "replace": {},
     "minimum-stability": "stable",
@@ -66,7 +63,8 @@
     ],
     "config": {
         "allow-plugins": {
-            "infection/extension-installer": true
+            "infection/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
         },
         "classmap-authoritative": true,
         "discard-changes": true,
@@ -91,10 +89,7 @@
             "@psalm:dry-run"
         ],
         "cs-check": "vendor/bin/ecs check --clear-cache || true",
-        "cs-fix": [
-            "vendor/bin/ecs check --fix --clear-cache",
-            "vendor/bin/ecs check-markdown --fix --clear-cache"
-        ],
+        "cs-fix": "vendor/bin/ecs check --fix --clear-cache",
         "infection": [
             "@putenv XDEBUG_MODE=coverage",
             "vendor/bin/infection --verbose"
