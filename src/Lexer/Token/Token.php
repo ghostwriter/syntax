@@ -17,7 +17,8 @@ final class Token implements Stringable
         private int $trivia = 0,
         private int $start = 0,
         private int $width = 0
-    ) {}
+    ) {
+    }
 
     public function __toString(): string
     {
@@ -34,7 +35,9 @@ final class Token implements Stringable
         return $this->trivia;
     }
 
-    /** @psalm-mutation-free */
+    /**
+     * @psalm-mutation-free
+     */
     public function getFullText(string $document): string
     {
         return mb_substr($document, $this->trivia, $this->width);
@@ -50,7 +53,9 @@ final class Token implements Stringable
         return $this->kind;
     }
 
-    /** @psalm-mutation-free */
+    /**
+     * @psalm-mutation-free
+     */
     public function getLeadingTrivia(string $document): string
     {
         return mb_substr($document, $this->trivia, $this->start - $this->trivia);
@@ -61,7 +66,9 @@ final class Token implements Stringable
         return $this->start;
     }
 
-    /** @psalm-mutation-free */
+    /**
+     * @psalm-mutation-free
+     */
     public function getText(string $document): string
     {
         return mb_substr($document, $this->start, $this->width - ($this->start - $this->trivia));
