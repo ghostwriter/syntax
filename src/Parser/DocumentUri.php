@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Plex\Parser;
+namespace Ghostwriter\Syntax\Parser;
 
 interface DocumentUri
 {
