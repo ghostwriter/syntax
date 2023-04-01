@@ -6,7 +6,6 @@ namespace Ghostwriter\Syntax;
 
 final class TokenKind
 {
-
     /**
      * @var int
      */
@@ -16,5 +15,4 @@ final class TokenKind
      * @var int
      */
     public const TOKEN_Unknown = 0;
-
 }
