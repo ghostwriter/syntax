@@ -1,10 +1,10 @@
-# Plex
+# Syntax
 
-[![Compliance](https://github.com/ghostwriter/plex/actions/workflows/compliance.yml/badge.svg)](https://github.com/ghostwriter/plex/actions/workflows/compliance.yml)
-[![Supported PHP Version](https://badgen.net/packagist/php/ghostwriter/plex?color=8892bf)](https://www.php.net/supported-versions)
-[![Type Coverage](https://shepherd.dev/github/ghostwriter/plex/coverage.svg)](https://shepherd.dev/github/ghostwriter/plex)
-[![Latest Version on Packagist](https://badgen.net/packagist/v/ghostwriter/plex)](https://packagist.org/packages/ghostwriter/plex)
-[![Downloads](https://badgen.net/packagist/dt/ghostwriter/plex?color=blue)](https://packagist.org/packages/ghostwriter/plex)
+[![Compliance](https://github.com/ghostwriter/syntax/actions/workflows/compliance.yml/badge.svg)](https://github.com/ghostwriter/syntax/actions/workflows/compliance.yml)
+[![Supported PHP Version](https://badgen.net/packagist/php/ghostwriter/syntax?color=8892bf)](https://www.php.net/supported-versions)
+[![Type Coverage](https://shepherd.dev/github/ghostwriter/syntax/coverage.svg)](https://shepherd.dev/github/ghostwriter/syntax)
+[![Latest Version on Packagist](https://badgen.net/packagist/v/ghostwriter/syntax)](https://packagist.org/packages/ghostwriter/syntax)
+[![Downloads](https://badgen.net/packagist/dt/ghostwriter/syntax?color=blue)](https://packagist.org/packages/ghostwriter/syntax)
 
 Lexical Analysis library for PHP (Lexer, Tokenizer, Scanner, Parser, Generator)
 
@@ -17,7 +17,7 @@ Lexical Analysis library for PHP (Lexer, Tokenizer, Scanner, Parser, Generator)
 You can install the package via composer:
 
 ``` bash
-composer require ghostwriter/plex
+composer require ghostwriter/syntax
 ```
 
 ## Usage
@@ -47,7 +47,7 @@ If you discover any security related issues, please email `nathanael.esayeas@pro
 ## Credits
 
 - [Nathanael Esayeas](https://github.com/ghostwriter)
-- [All Contributors](https://github.com/ghostwriter/plex/contributors)
+- [All Contributors](https://github.com/ghostwriter/syntax/contributors)
 
 ## License
 
