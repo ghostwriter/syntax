@@ -6,5 +6,5 @@ namespace Ghostwriter\Syntax\Contract\Parser;
 
 interface VisitorInterface
 {
-    public function visit(NodeInterface $visitor): void;
+    public function visit(NodeInterface $node): void;
 }
