@@ -1,11 +1,11 @@
 {
-    "name": "ghostwriter/plex",
+    "name": "ghostwriter/syntax",
     "description": "Here be dragons",
     "license": "BSD-3-Clause",
     "type": "library",
     "keywords": [
         "ghostwriter",
-        "plex"
+        "syntax"
     ],
     "authors": [
         {
@@ -15,13 +15,13 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/ghostwriter/plex",
+    "homepage": "https://github.com/ghostwriter/syntax",
     "support": {
-        "issues": "https://github.com/ghostwriter/plex/issues",
-        "forum": "https://github.com/ghostwriter/plex/discussions",
-        "source": "https://github.com/ghostwriter/plex",
-        "docs": "https://github.com/ghostwriter/plex",
-        "rss": "https://github.com/ghostwriter/plex/releases.atom"
+        "issues": "https://github.com/ghostwriter/syntax/issues",
+        "forum": "https://github.com/ghostwriter/syntax/discussions",
+        "source": "https://github.com/ghostwriter/syntax",
+        "docs": "https://github.com/ghostwriter/syntax",
+        "rss": "https://github.com/ghostwriter/syntax/releases.atom"
     },
     "funding": [
         {
@@ -53,12 +53,12 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Ghostwriter\\Plex\\": "src/"
+            "Ghostwriter\\Syntax\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ghostwriter\\Plex\\Tests\\": "tests/"
+            "Ghostwriter\\Syntax\\Tests\\": "tests/"
         }
     },
     "bin": [
