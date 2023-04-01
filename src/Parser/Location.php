@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Plex\Parser;
+namespace Ghostwriter\Syntax\Parser;
 
 /**
  * The location where an element occurs within a file.
@@ -41,6 +41,7 @@ final class Location
         if ($this->column === $column) {
             return $this;
         }
+
         $copy = clone $this;
         $copy->column = $column;
         return $copy;
@@ -51,6 +52,7 @@ final class Location
         if ($this->line === $line) {
             return $this;
         }
+
         $copy = clone $this;
         $copy->line = $line;
         return $copy;
