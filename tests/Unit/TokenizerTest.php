@@ -20,8 +20,14 @@ use PHPUnit\Framework\TestCase;
  */
 final class TokenizerTest extends TestCase
 {
+    /**
+     * @var string
+     */
     public const BLM = '#BlackLivesMatter';
 
+    /**
+     * @var int
+     */
     public const ElephantEmoji = 128024;
 
     public function testTokenizeString(): void
