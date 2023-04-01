@@ -11,32 +11,18 @@ use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
 #[CoversClass(Tokenizer::class)]
+/**
+ * @internal
+ *
+ * @small
+ *
+ * @coversNothing
+ */
 final class TokenizerTest extends TestCase
 {
     public const BLM = '#BlackLivesMatter';
+
     public const ElephantEmoji = 128024;
-    public function testTokenizingAnEmptyStringMustReturnAnEndOfFileToken(): void
-    {
-        $tokenizer = new Tokenizer();
-
-        $tokens = $tokenizer->tokenize('');
-
-        self::assertSame([TokenKind::TOKEN_EndOfFile], iterator_to_array($tokens));
-    }
-
-
-    public function testTokenizingAnEmojiMustTheMultiByteCodePointAndAnEndOfFileToken(): void
-    {
-        $tokenizer = new Tokenizer();
-
-        $tokens = $tokenizer->tokenize('🐘');
-
-        self::assertSame(
-            [0 => self::ElephantEmoji, 4 => TokenKind::TOKEN_EndOfFile],
-            iterator_to_array($tokens)
-        );
-    }
-
 
     public function testTokenizeString(): void
     {
@@ -62,7 +48,31 @@ final class TokenizerTest extends TestCase
             CharacterCodes::t,
             CharacterCodes::e,
             CharacterCodes::r,
-            TokenKind::TOKEN_EndOfFile
+            TokenKind::TOKEN_EndOfFile,
         ], iterator_to_array($tokens));
+    }
+
+    public function testTokenizingAnEmojiMustTheMultiByteCodePointAndAnEndOfFileToken(): void
+    {
+        $tokenizer = new Tokenizer();
+
+        $tokens = $tokenizer->tokenize('🐘');
+
+        self::assertSame(
+            [
+                0 => self::ElephantEmoji,
+                4 => TokenKind::TOKEN_EndOfFile,
+            ],
+            iterator_to_array($tokens)
+        );
+    }
+
+    public function testTokenizingAnEmptyStringMustReturnAnEndOfFileToken(): void
+    {
+        $tokenizer = new Tokenizer();
+
+        $tokens = $tokenizer->tokenize('');
+
+        self::assertSame([TokenKind::TOKEN_EndOfFile], iterator_to_array($tokens));
     }
 }
