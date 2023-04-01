@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Plex\Tests\Unit;
+namespace Ghostwriter\Syntax\Tests\Unit;
 
-use Ghostwriter\Plex\CharacterCodes;
-use Ghostwriter\Plex\Tokenizer;
-use Ghostwriter\Plex\TokenKind;
+use Ghostwriter\Syntax\CharacterCodes;
+use Ghostwriter\Syntax\Tokenizer;
+use Ghostwriter\Syntax\TokenKind;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
