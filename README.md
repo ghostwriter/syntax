@@ -33,7 +33,7 @@ composer require ghostwriter/syntax
 # This is for development; dogfooding to parse and generate the AST for test fixture files.
 syntax /path/to/file.php 
 
-# Save or Update the AST of the PHP file as JSON file ['file.php => file.php.json'] in the same location.
+# -s|--save: Save or Update the AST of the PHP file as JSON file ['file.php => file.php.json'] in the same location.
 ```
 
 ## Testing
