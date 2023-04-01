@@ -13,21 +13,9 @@ use PHPUnit\Framework\TestCase;
  * @internal
  *
  * @small
- *
  */
 final class TokenTest extends TestCase
 {
-    /**
-     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::__construct
-     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getFullStart
-     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getFullText
-     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getFullWidth
-     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getKind
-     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getStart
-     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getText
-     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getTriviaText
-     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getWidth
-     */
     public function testToken(): void
     {
         $trivia = '  ';
