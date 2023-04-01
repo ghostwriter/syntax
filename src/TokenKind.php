@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Plex;
+namespace Ghostwriter\Syntax;
 
 final class TokenKind
 {
