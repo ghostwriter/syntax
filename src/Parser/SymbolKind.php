@@ -10,7 +10,7 @@ final class SymbolKind
 
     public const Boolean = 17;
 
-    public const Class = 5;
+    public const ClassSymbol = 5;
 
     public const Constant = 14;
 
