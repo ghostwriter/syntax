@@ -89,7 +89,7 @@ use function sprintf;
     );
 
     $container->build(SingleCommandApplication::class)
-        ->setName('Syntax - #BlackLivesMatter✊🏾')
+        ->setName('Syntax - Lexical Analysis library for PHP. #BlackLivesMatter✊🏾')
         ->setVersion('1.0.0')
         ->setDescription('Parse a PHP file and render the abstract syntax tree (AST).')
         ->addArgument('file', InputArgument::REQUIRED, 'The file to parse.')
