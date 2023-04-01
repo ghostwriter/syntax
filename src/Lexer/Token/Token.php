@@ -13,10 +13,10 @@ use function array_flip;
 final class Token implements Stringable
 {
     public function __construct(
-        private int $kind = 0,
-        private int $trivia = 0,
-        private int $start = 0,
-        private int $width = 0
+        private readonly int $kind = 0,
+        private readonly int $trivia = 0,
+        private readonly int $start = 0,
+        private readonly int $width = 0
     ) {
     }
 
@@ -111,6 +111,9 @@ final class Token implements Stringable
         return $this->kind !== $kind;
     }
 
+    /**
+     * @return array{kind: int|string, width: int, trivia: int, start: int}
+     */
     public function jsonSerialize(): array
     {
         return [
