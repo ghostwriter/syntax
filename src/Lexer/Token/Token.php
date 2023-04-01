@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Plex\Lexer\Token;
+namespace Ghostwriter\Syntax\Lexer\Token;
 
 use Ghostwriter\Json\Json;
-use Ghostwriter\Plex\TokenKind;
+use Ghostwriter\Syntax\TokenKind;
 use ReflectionClass;
 use Stringable;
 use function array_flip;
