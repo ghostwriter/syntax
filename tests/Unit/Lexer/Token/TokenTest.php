@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace Ghostwriter\Syntax\Tests\Unit\Lexer\Token;
 
-use Ghostwriter\Syntax\Tokenizer;
+use Ghostwriter\Syntax\Lexer\Token\Token;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Small;
-use Ghostwriter\Syntax\Lexer\Token\Token;
 use PHPUnit\Framework\TestCase;
 
 #[Small]
@@ -17,12 +16,12 @@ final class TokenTest extends TestCase
     /**
      * @var string
      */
-    private const TRIVIA = '  ';
+    private const BML = '#BlackLivesMatter';
 
     /**
      * @var string
      */
-    private const BML = '#BlackLivesMatter';
+    private const TRIVIA = '  ';
 
     public function testToken(): void
     {
