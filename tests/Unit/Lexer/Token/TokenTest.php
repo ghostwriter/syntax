@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Plex\Tests\Unit\Lexer\Token;
+namespace Ghostwriter\Syntax\Tests\Unit\Lexer\Token;
 
-use Ghostwriter\Plex\Lexer\Token\Token;
+use Ghostwriter\Syntax\Lexer\Token\Token;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @coversDefaultClass \Ghostwriter\Plex\Lexer\Token\Token
+ * @coversDefaultClass \Ghostwriter\Syntax\Lexer\Token\Token
  *
  * @internal
  *
@@ -18,15 +18,15 @@ use PHPUnit\Framework\TestCase;
 final class TokenTest extends TestCase
 {
     /**
-     * @covers \Ghostwriter\Plex\Lexer\Token\Token::__construct
-     * @covers \Ghostwriter\Plex\Lexer\Token\Token::getFullStart
-     * @covers \Ghostwriter\Plex\Lexer\Token\Token::getFullText
-     * @covers \Ghostwriter\Plex\Lexer\Token\Token::getFullWidth
-     * @covers \Ghostwriter\Plex\Lexer\Token\Token::getKind
-     * @covers \Ghostwriter\Plex\Lexer\Token\Token::getStart
-     * @covers \Ghostwriter\Plex\Lexer\Token\Token::getText
-     * @covers \Ghostwriter\Plex\Lexer\Token\Token::getTriviaText
-     * @covers \Ghostwriter\Plex\Lexer\Token\Token::getWidth
+     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::__construct
+     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getFullStart
+     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getFullText
+     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getFullWidth
+     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getKind
+     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getStart
+     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getText
+     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getTriviaText
+     * @covers \Ghostwriter\Syntax\Lexer\Token\Token::getWidth
      */
     public function testToken(): void
     {
