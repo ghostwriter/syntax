@@ -6,7 +6,7 @@
 [![Latest Version on Packagist](https://badgen.net/packagist/v/ghostwriter/syntax)](https://packagist.org/packages/ghostwriter/syntax)
 [![Downloads](https://badgen.net/packagist/dt/ghostwriter/syntax?color=blue)](https://packagist.org/packages/ghostwriter/syntax)
 
-Lexical Analysis library for PHP (Lexer, Tokenizer, Scanner, Parser, Generator)
+Lexical Analysis library for PHP (Lexer, Tokenizer, Parser, Generator)
 
 > **Warning**
 >
