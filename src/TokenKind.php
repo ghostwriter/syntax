@@ -9,10 +9,10 @@ final class TokenKind
     /**
      * @var int
      */
-    public const TOKEN_EndOfFile = 0x03;
+    public const END_OF_FILE = 0x03;
 
     /**
      * @var int
      */
-    public const TOKEN_Unknown = 0;
+    public const UNKNOWN = 0x0;
 }
