@@ -56,6 +56,6 @@ final class Tokenizer
             throw new RuntimeException('Invalid UTF-8 character at : ' . $i);
         }
 
-        yield $i => TokenKind::TOKEN_EndOfFile;
+        yield $i => TokenKind::END_OF_FILE;
     }
 }
