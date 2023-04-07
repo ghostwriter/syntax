@@ -54,7 +54,7 @@ final class TokenizerTest extends TestCase
             CharacterCodes::t,
             CharacterCodes::e,
             CharacterCodes::r,
-            TokenKind::TOKEN_EndOfFile,
+            TokenKind::END_OF_FILE,
         ], iterator_to_array($tokens));
     }
 
@@ -64,13 +64,10 @@ final class TokenizerTest extends TestCase
 
         $tokens = $tokenizer->tokenize('🐘');
 
-        self::assertSame(
-            [
-                0 => self::ElephantEmoji,
-                4 => TokenKind::TOKEN_EndOfFile,
-            ],
-            iterator_to_array($tokens)
-        );
+        self::assertSame([
+            0 => self::ElephantEmoji,
+            4 => TokenKind::END_OF_FILE,
+        ], iterator_to_array($tokens));
     }
 
     public function testTokenizingAnEmptyStringMustReturnAnEndOfFileToken(): void
@@ -79,6 +76,6 @@ final class TokenizerTest extends TestCase
 
         $tokens = $tokenizer->tokenize('');
 
-        self::assertSame([TokenKind::TOKEN_EndOfFile], iterator_to_array($tokens));
+        self::assertSame([TokenKind::END_OF_FILE], iterator_to_array($tokens));
     }
 }
