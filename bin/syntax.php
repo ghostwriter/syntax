@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Syntax\Console;
-
 use Ghostwriter\Container\Container;
 use Ghostwriter\Container\Contract\ContainerInterface;
 use Ghostwriter\EventDispatcher\Contract\DispatcherInterface;
