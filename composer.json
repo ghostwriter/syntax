@@ -34,9 +34,9 @@
         }
     ],
     "require": {
-        "php": ">=8.0,<8.3",
+        "php": ">=8.1,<8.3",
         "ghostwriter/collection": "^0.5.1",
-        "ghostwriter/container": "^1.4",
+        "ghostwriter/container": "^1.5",
         "ghostwriter/event-dispatcher": "^1.4",
         "ghostwriter/json": "^1.1",
         "ghostwriter/option": "^1.4",

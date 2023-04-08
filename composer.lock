@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c2c344d700e66ffea1610b313f4089a",
+    "content-hash": "d14a3ee88e40cdf9c57a3e567e47dec2",
     "packages": [
         {
             "name": "ghostwriter/collection",
@@ -74,16 +74,16 @@
         },
         {
             "name": "ghostwriter/container",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ghostwriter/container.git",
-                "reference": "d70885001220497f90726daa1af7a3a396e74e21"
+                "reference": "6ff9f6c32277c050a5c80e5e1161e80caff814a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ghostwriter/container/zipball/d70885001220497f90726daa1af7a3a396e74e21",
-                "reference": "d70885001220497f90726daa1af7a3a396e74e21",
+                "url": "https://api.github.com/repos/ghostwriter/container/zipball/6ff9f6c32277c050a5c80e5e1161e80caff814a5",
+                "reference": "6ff9f6c32277c050a5c80e5e1161e80caff814a5",
                 "shasum": ""
             },
             "require": {
@@ -119,7 +119,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ghostwriter/container/issues",
-                "source": "https://github.com/ghostwriter/container/tree/1.4.0"
+                "source": "https://github.com/ghostwriter/container/tree/1.5.0"
             },
             "funding": [
                 {
@@ -127,25 +127,25 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-03-21T13:23:31+00:00"
+            "time": "2023-04-08T16:53:59+00:00"
         },
         {
             "name": "ghostwriter/event-dispatcher",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ghostwriter/event-dispatcher.git",
-                "reference": "9c9ebe8e9950fa21538688287be94f4a75705a9f"
+                "reference": "7a8990f0e603be72598c3ca96ca7941cafa8f50d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ghostwriter/event-dispatcher/zipball/9c9ebe8e9950fa21538688287be94f4a75705a9f",
-                "reference": "9c9ebe8e9950fa21538688287be94f4a75705a9f",
+                "url": "https://api.github.com/repos/ghostwriter/event-dispatcher/zipball/7a8990f0e603be72598c3ca96ca7941cafa8f50d",
+                "reference": "7a8990f0e603be72598c3ca96ca7941cafa8f50d",
                 "shasum": ""
             },
             "require": {
-                "ghostwriter/container": "^1.3",
-                "ghostwriter/option": "^1.3",
+                "ghostwriter/container": "^1.4",
+                "ghostwriter/option": "^1.4",
                 "php": ">=8.1,<8.3"
             },
             "require-dev": {
@@ -188,7 +188,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-01-17T05:07:44+00:00"
+            "time": "2023-04-03T17:34:49+00:00"
         },
         {
             "name": "ghostwriter/json",
@@ -1394,16 +1394,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.15.1",
+            "version": "v3.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "d48755372a113bddb99f749e34805d83f3acfe04"
+                "reference": "d40f9436e1c448d309fa995ab9c14c5c7a96f2dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/d48755372a113bddb99f749e34805d83f3acfe04",
-                "reference": "d48755372a113bddb99f749e34805d83f3acfe04",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/d40f9436e1c448d309fa995ab9c14c5c7a96f2dc",
+                "reference": "d40f9436e1c448d309fa995ab9c14c5c7a96f2dc",
                 "shasum": ""
             },
             "require": {
@@ -1478,7 +1478,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.15.1"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.16.0"
             },
             "funding": [
                 {
@@ -1486,7 +1486,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-03-13T23:26:30+00:00"
+            "time": "2023-04-02T19:30:06+00:00"
         },
         {
             "name": "ghostwriter/coding-standard",
@@ -1494,22 +1494,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ghostwriter/coding-standard.git",
-                "reference": "93d21f4c3dda787e70737c1ee7b985d393309ccf"
+                "reference": "65de38824b37e92d3d580d9c260fce2f2e52a646"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ghostwriter/coding-standard/zipball/93d21f4c3dda787e70737c1ee7b985d393309ccf",
-                "reference": "93d21f4c3dda787e70737c1ee7b985d393309ccf",
+                "url": "https://api.github.com/repos/ghostwriter/coding-standard/zipball/65de38824b37e92d3d580d9c260fce2f2e52a646",
+                "reference": "65de38824b37e92d3d580d9c260fce2f2e52a646",
                 "shasum": ""
             },
             "require": {
-                "friendsofphp/php-cs-fixer": "^3.15.1",
+                "friendsofphp/php-cs-fixer": "^3.16.0",
                 "infection/infection": "^0.26.19",
                 "php": ">=8.1,<8.3",
                 "phpunit/phpunit": "^10.0.19",
                 "psalm/plugin-phpunit": "^0.18.4",
-                "rector/rector": "^0.15.23",
-                "slevomat/coding-standard": "^8.9.1",
+                "rector/rector": "^0.15.24",
+                "slevomat/coding-standard": "^8.9.2",
                 "squizlabs/php_codesniffer": "^3.7.2",
                 "symplify/easy-coding-standard": "^11.3.2",
                 "vimeo/psalm": "^5.9.0"
@@ -1547,7 +1547,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-03-30T11:06:59+00:00"
+            "time": "2023-04-07T12:49:21+00:00"
         },
         {
             "name": "infection/abstract-testframework-adapter",
@@ -2449,16 +2449,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.16.1",
+            "version": "1.17.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "e27e92d939e2e3636f0a1f0afaba59692c0bf571"
+                "reference": "d3753fcb3abc6f78f5de6f72153d4b9c99c72dee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/e27e92d939e2e3636f0a1f0afaba59692c0bf571",
-                "reference": "e27e92d939e2e3636f0a1f0afaba59692c0bf571",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/d3753fcb3abc6f78f5de6f72153d4b9c99c72dee",
+                "reference": "d3753fcb3abc6f78f5de6f72153d4b9c99c72dee",
                 "shasum": ""
             },
             "require": {
@@ -2488,22 +2488,22 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.16.1"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.17.1"
             },
-            "time": "2023-02-07T18:11:17+00:00"
+            "time": "2023-04-04T11:11:22+00:00"
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.9",
+            "version": "1.10.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "9b13dafe3d66693d20fe5729c3dde1d31bb64703"
+                "reference": "8aa62e6ea8b58ffb650e02940e55a788cbc3fe21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/9b13dafe3d66693d20fe5729c3dde1d31bb64703",
-                "reference": "9b13dafe3d66693d20fe5729c3dde1d31bb64703",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/8aa62e6ea8b58ffb650e02940e55a788cbc3fe21",
+                "reference": "8aa62e6ea8b58ffb650e02940e55a788cbc3fe21",
                 "shasum": ""
             },
             "require": {
@@ -2552,7 +2552,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-30T08:58:01+00:00"
+            "time": "2023-04-04T19:17:42+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -3237,16 +3237,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "0.15.23",
+            "version": "0.15.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "f4984ebd62b3613002869b0ddd6868261d62819e"
+                "reference": "716473919bcfdc27bdd2a32afb72adbf4c224e59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/f4984ebd62b3613002869b0ddd6868261d62819e",
-                "reference": "f4984ebd62b3613002869b0ddd6868261d62819e",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/716473919bcfdc27bdd2a32afb72adbf4c224e59",
+                "reference": "716473919bcfdc27bdd2a32afb72adbf4c224e59",
                 "shasum": ""
             },
             "require": {
@@ -3286,7 +3286,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/0.15.23"
+                "source": "https://github.com/rectorphp/rector/tree/0.15.24"
             },
             "funding": [
                 {
@@ -3294,7 +3294,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-03-22T15:22:45+00:00"
+            "time": "2023-04-05T08:49:11+00:00"
         },
         {
             "name": "sanmai/later",
@@ -4330,32 +4330,32 @@
         },
         {
             "name": "slevomat/coding-standard",
-            "version": "8.9.1",
+            "version": "8.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slevomat/coding-standard.git",
-                "reference": "3d4fe0c803ae15829ef72d90d3d4eee3dd9f79b2"
+                "reference": "c9b39061ebd5c58b71ecae26042eb7b054c380dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/3d4fe0c803ae15829ef72d90d3d4eee3dd9f79b2",
-                "reference": "3d4fe0c803ae15829ef72d90d3d4eee3dd9f79b2",
+                "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/c9b39061ebd5c58b71ecae26042eb7b054c380dd",
+                "reference": "c9b39061ebd5c58b71ecae26042eb7b054c380dd",
                 "shasum": ""
             },
             "require": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2 || ^0.7 || ^1.0",
                 "php": "^7.2 || ^8.0",
-                "phpstan/phpdoc-parser": ">=1.16.0 <1.17.0",
+                "phpstan/phpdoc-parser": ">=1.16.0 <1.18.0",
                 "squizlabs/php_codesniffer": "^3.7.1"
             },
             "require-dev": {
                 "phing/phing": "2.17.4",
                 "php-parallel-lint/php-parallel-lint": "1.3.2",
-                "phpstan/phpstan": "1.4.10|1.10.8",
+                "phpstan/phpstan": "1.4.10|1.10.11",
                 "phpstan/phpstan-deprecation-rules": "1.1.3",
-                "phpstan/phpstan-phpunit": "1.0.0|1.3.10",
-                "phpstan/phpstan-strict-rules": "1.5.0",
-                "phpunit/phpunit": "7.5.20|8.5.21|9.6.5"
+                "phpstan/phpstan-phpunit": "1.0.0|1.3.11",
+                "phpstan/phpstan-strict-rules": "1.5.1",
+                "phpunit/phpunit": "7.5.20|8.5.21|9.6.6"
             },
             "type": "phpcodesniffer-standard",
             "extra": {
@@ -4379,7 +4379,7 @@
             ],
             "support": {
                 "issues": "https://github.com/slevomat/coding-standard/issues",
-                "source": "https://github.com/slevomat/coding-standard/tree/8.9.1"
+                "source": "https://github.com/slevomat/coding-standard/tree/8.9.2"
             },
             "funding": [
                 {
@@ -4391,7 +4391,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-27T11:00:16+00:00"
+            "time": "2023-04-05T06:23:58+00:00"
         },
         {
             "name": "spatie/array-to-xml",
@@ -6238,7 +6238,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8.0,<8.3"
+        "php": ">=8.1,<8.3"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
