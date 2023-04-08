@@ -16,26 +16,45 @@ final class TokenTest extends TestCase
     /**
      * @var string
      */
-    private const BML = '#BlackLivesMatter';
+    private const BML = 'BlackLivesMatter';
 
     /**
      * @var string
      */
-    private const TRIVIA = '  ';
+    private const TRIVIA = '#';
 
     public function testToken(): void
     {
-        $content = sprintf('%s%s', self::TRIVIA, self::BML);
-        $token = new Token(0, 0, 2, mb_strlen($content));
+        $start = 0;
+        $document = sprintf('%s%s%s', str_repeat(' ', $start), self::TRIVIA, self::BML);
+        $documentLength = mb_strlen($document);
+        $triviaLength = mb_strlen(self::TRIVIA);
+        $textLength = mb_strlen(self::BML);
+        $offset = $start + $triviaLength;
+
+        $token = new Token(0, $start, $offset, $documentLength);
+
+        self::assertSame($triviaLength, $token->getTriviaLength());
+        self::assertSame($textLength + $start, $token->getTextLength());
+        self::assertSame($documentLength + $start, $token->getWidth());
+
+        self::assertSame(ltrim($document), $token->getFullText($document));
+        self::assertSame(self::TRIVIA, $token->getTrivia($document));
+        self::assertSame(self::BML, $token->getText($document));
+        self::assertSame($triviaLength, mb_strlen($token->getTrivia($document)));
+        self::assertSame($textLength, mb_strlen($token->getText($document)));
 
         self::assertSame(0, $token->getKind());
-        self::assertSame(2, $token->getStart());
-        self::assertSame(17, $token->getWidth());
-        self::assertSame(0, $token->getFullStart());
-        self::assertSame(19, $token->getFullWidth());
+        self::assertSame(0, $token->getStart());
+        self::assertSame(1, $token->getOffset());
+        self::assertSame(17, $token->getLength());
+        self::assertSame(17, $token->getEnd());
 
-        self::assertSame(self::BML, $token->getText($content));
-        self::assertSame($content, $token->getFullText($content));
-        self::assertSame(self::TRIVIA, $token->getTriviaText($content));
+        self::assertSame(1, $token->getTriviaLength());
+        self::assertSame(16, $token->getTextLength());
+        self::assertSame(17, $token->getWidth());
+
+        self::assertTrue($token->is(0));
+        self::assertTrue($token->isNot(1));
     }
 }

@@ -6,17 +6,18 @@ namespace Ghostwriter\Syntax\Lexer\Token;
 
 use Ghostwriter\Json\Json;
 use Ghostwriter\Syntax\TokenKind;
+use JsonSerializable;
 use ReflectionClass;
 use Stringable;
 use function array_flip;
 
-final class Token implements Stringable
+final class Token implements JsonSerializable, Stringable
 {
     public function __construct(
-        private readonly int $kind = 0,
-        private readonly int $trivia = 0,
-        private readonly int $start = 0,
-        private readonly int $width = 0
+        private readonly int $kind,
+        private readonly int $start,
+        private readonly int $offset,
+        private readonly int $length
     ) {
     }
 
@@ -27,12 +28,7 @@ final class Token implements Stringable
 
     public function getEnd(): int
     {
-        return $this->trivia + $this->width;
-    }
-
-    public function getFullStart(): int
-    {
-        return $this->trivia;
+        return $this->start + $this->length;
     }
 
     /**
@@ -40,12 +36,7 @@ final class Token implements Stringable
      */
     public function getFullText(string $document): string
     {
-        return mb_substr($document, $this->trivia, $this->width);
-    }
-
-    public function getFullWidth(): int
-    {
-        return $this->trivia + $this->width;
+        return mb_substr($document, $this->start, $this->length);
     }
 
     public function getKind(): int
@@ -53,12 +44,15 @@ final class Token implements Stringable
         return $this->kind;
     }
 
-    /**
-     * @psalm-mutation-free
-     */
-    public function getLeadingTrivia(string $document): string
+    public function getLength(): int
     {
-        return mb_substr($document, $this->trivia, $this->start - $this->trivia);
+        return $this->length;
+        return $this->getTriviaLength() + $this->getTextLength();
+    }
+
+    public function getOffset(): int
+    {
+        return $this->offset;
     }
 
     public function getStart(): int
@@ -71,41 +65,60 @@ final class Token implements Stringable
      */
     public function getText(string $document): string
     {
-        return mb_substr($document, $this->start, $this->width - ($this->start - $this->trivia));
+        return mb_substr($document, $this->offset, $this->getTextLength());
+    }
+
+    public function getTextLength(): int
+    {
+        return $this->length - $this->getTriviaLength();
     }
 
     /**
      * Returns the token kind name as a string, or the token number if the name was not found.
      */
-    public static function getTokenKindNameFromValue(int $kind): int|string
+    public static function getTokenKindNameFromValue(int $kind): string
     {
         /**
          * A hash map of the format [int $TokenKind => string $TokenName].
          *
-         * @var null|array<string> $mapToKindName
+         * @var null|array<int,string> $mapToKindName
          */
         static $mapToKindName = null;
 
         $mapToKindName ??= array_flip((new ReflectionClass(TokenKind::class))->getConstants());
 
-        return $mapToKindName[$kind] ?? $kind;
+        return $mapToKindName[$kind] ?? 'Unknown';
     }
 
-    public function getTriviaText(string $document): string
+    /**
+     * @psalm-mutation-free
+     */
+    public function getTrivia(string $document): string
     {
-        return mb_substr($document, $this->trivia, $this->start);
+        return mb_substr($document, $this->start, $this->getTriviaLength());
+    }
+
+    public function getTriviaLength(): int
+    {
+        return $this->offset - $this->start;
     }
 
     public function getWidth(): int
     {
-        return $this->width + ($this->trivia - $this->start);
+        return $this->start + $this->length;
     }
 
+    /**
+     * @psalm-mutation-free
+     */
     public function is(int $kind): bool
     {
         return $this->kind === $kind;
     }
 
+    /**
+     * @psalm-mutation-free
+     */
     public function isNot(int $kind): bool
     {
         return $this->kind !== $kind;
@@ -118,9 +131,9 @@ final class Token implements Stringable
     {
         return [
             'kind' => self::getTokenKindNameFromValue($this->kind),
-            'width' => $this->width,
-            'trivia' => $this->trivia,
             'start' => $this->start,
+            'offset' => $this->offset,
+            'length' => $this->length,
         ];
     }
 }
