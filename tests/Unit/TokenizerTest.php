@@ -37,7 +37,7 @@ final class TokenizerTest extends TestCase
         $tokens = $tokenizer->tokenize(self::BLM);
 
         self::assertSame([
-            CharacterCodes::_HASH,
+            CharacterCodes::HASH,
             CharacterCodes::B,
             CharacterCodes::l,
             CharacterCodes::a,
