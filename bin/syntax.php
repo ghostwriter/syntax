@@ -2,27 +2,20 @@
 
 declare(strict_types=1);
 
+namespace Ghostwriter\Syntax;
+
 use Ghostwriter\Container\Container;
 use Ghostwriter\Container\Contract\ContainerInterface;
-use Ghostwriter\EventDispatcher\Contract\DispatcherInterface;
 use Ghostwriter\EventDispatcher\Contract\ListenerProviderInterface;
 use Ghostwriter\EventDispatcher\Dispatcher;
 use Ghostwriter\EventDispatcher\ListenerProvider;
 use Ghostwriter\Syntax\Event\ConsoleEvent;
 use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Console\Input\ArgvInput;
-use Symfony\Component\Console\Input\ArrayInput;
-use Symfony\Component\Console\Input\Input;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
-use Symfony\Component\Console\Input\StringInput;
-use Symfony\Component\Console\Output\ConsoleOutput;
-use Symfony\Component\Console\Output\NullOutput;
-use Symfony\Component\Console\Output\Output;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\SingleCommandApplication;
-use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Finder\Finder;
 use function dirname;
 use function sprintf;
@@ -36,38 +29,18 @@ use function sprintf;
     ) && exit(1);
 
     /**
-     * #BlackLivesMatter.
+     * #BlackLivesMatter!
      */
-
     $container = Container::getInstance();
 
-    $container->bind(ListenerProvider::class);
     $container->alias(ListenerProviderInterface::class, ListenerProvider::class);
-    $container->set(
-        Dispatcher::class,
-        static fn (
-            ContainerInterface $container
-        ): Dispatcher =>
-            $container->build(Dispatcher::class, [$container->get(ListenerProviderInterface::class)])
-    );
-    $container->alias(DispatcherInterface::class, Dispatcher::class);
-
-    // Input
-    $container->bind(ArgvInput::class);
-    $container->bind(ArrayInput::class);
-    $container->bind(StringInput::class);
-    $container->alias(Input::class, ArgvInput::class);
-    $container->alias(InputInterface::class, Input::class);
-    // Output
-    $container->bind(ConsoleOutput::class);
-    $container->bind(NullOutput::class);
-    $container->bind(SymfonyStyle::class);
-    $container->alias(Output::class, ConsoleOutput::class);
-    $container->alias(OutputInterface::class, Output::class);
 
     $container->extend(
-        ListenerProvider::class,
-        static function (ContainerInterface $container, ListenerProvider $listenerProvider): ListenerProvider {
+        ListenerProviderInterface::class,
+        static function (
+            ContainerInterface $container,
+            ListenerProviderInterface $listenerProvider
+        ): ListenerProviderInterface {
             $finder = $container->build(Finder::class)
                 ->files()
                 ->in(dirname(__DIR__) . '/src/Listener/')
@@ -77,7 +50,7 @@ use function sprintf;
 
             foreach ($finder->getIterator() as $splFileInfo) {
                 $listenerProvider->bindListener(
-                    sprintf('%s\Event\%sEvent', __NAMESPACE__, $splFileInfo->getBasename('Listener.php')),
+                    sprintf('%s\Event\%s', __NAMESPACE__, $splFileInfo->getBasename('Listener.php')),
                     sprintf('%s\Listener\%s', __NAMESPACE__, $splFileInfo->getBasename('.php'))
                 );
             }
