@@ -6,6 +6,129 @@ namespace Ghostwriter\Syntax;
 
 final class KeywordKind
 {
+    //    public const T_ENDWHILE
+    public const AbstractKeyword = 0;
+
+    public const AndKeyword = 0;
+
+    public const ArrayKeyword = 0;
+
+    public const AsKeyword = 0;
+
+    public const BreakKeyword = 0;
+
+    public const CallableKeyword = 0;
+
+    public const CaseKeyword = 0;
+
+    public const CatchKeyword = 0;
+
+    public const ClassKeyword = 0;
+
+    public const CloneKeyword = 0;
+
+    public const ConstKeyword = 0;
+
+    public const ContinueKeyword = 0;
+
+    public const DeclareKeyword = 0;
+
+    public const DefaultKeyword = 0;
+
+    public const DieKeyword = 0;
+
+    public const DoKeyword = 0;
+
+    public const EchoKeyword = 0;
+
+    public const ElseIfKeyword = 0;
+
+    public const ElseKeyword = 0;
+
+    public const EmptyKeyword = 0;
+
+    public const EndDeclareKeyword = 0;
+
+    public const EndForEachKeyword = 0;
+
+    public const EndForKeyword = 0;
+
+    public const EndIfKeyword = 0;
+
+    public const EndSwitchKeyword = 0;
+
+    public const EndWhileKeyword = 0;
+
+    public const EnumKeyword = 0;
+
+    public const EvalKeyword = 0;
+
+    public const ExitKeyword = 0;
+
+    public const ExtendsKeyword = 0;
+
+    public const FinalKeyword = 0;
+
+    public const FinallyKeyword = 0;
+
+    public const FnKeyword = 0;
+
+    public const ForeachKeyword = 0;
+
+    public const ForKeyword = 0;
+
+    public const FunctionKeyword = 0;
+
+    public const GlobalKeyword = 0;
+
+    public const GotoKeyword = 0;
+
+    public const IfKeyword = 0;
+
+    public const ImplementsKeyword = 0;
+
+    public const IncludeKeyword = 0;
+
+    public const IncludeOnceKeyword = 0;
+
+    public const InstanceOfKeyword = 0;
+
+    public const InsteadOfKeyword = 0;
+
+    public const InterfaceKeyword = 0;
+
+    public const IsSetKeyword = 0;
+
+    public const ListKeyword = 0;
+
+    public const MatchKeyword = 0;
+
+    public const NamespaceKeyword = 0;
+
+    public const NewKeyword = 0;
+
+    public const OrKeyword = 0;
+
+    public const PrintKeyword = 0;
+
+    public const PrivateKeyword = 0;
+
+    public const ProtectedKeyword = 0;
+
+    public const PublicKeyword = 0;
+
+    public const ReadonlyKeyword = 0;
+
+    public const RequireKeyword = 0;
+
+    public const RequireOnceKeyword = 0;
+
+    public const ReturnKeyword = 0;
+
+    public const StaticKeyword = 0;
+
+    public const SwitchKeyword = 0;
+
     public const T_ABSTRACT = 314;
 
     public const T_AND_EQUAL = 277;
@@ -149,6 +272,24 @@ final class KeywordKind
     public const T_YIELD = 267;
 
     public const T_YIELD_FROM = 269;
-    //    public const T_ENDWHILE
-}
 
+    public const ThrowKeyword = 0;
+
+    public const TraitKeyword = 0;
+
+    public const TryKeyword = 0;
+
+    public const UnsetKeyword = 0;
+
+    public const UseKeyword = 0;
+
+    public const VarKeyword = 0;
+
+    public const WhileKeyword = 0;
+
+    public const XorKeyword = 0;
+
+    public const YieldFromKeyword = 0;
+
+    public const YieldKeyword = 0;
+}
