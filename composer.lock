@@ -4,34 +4,28 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d14a3ee88e40cdf9c57a3e567e47dec2",
+    "content-hash": "a95d1ce0439153a64928676f3151654b",
     "packages": [
         {
             "name": "ghostwriter/collection",
-            "version": "0.5.1",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ghostwriter/collection.git",
-                "reference": "daa113492813308d78e9672114b6d885fe56117f"
+                "reference": "d90268386a32a562c29a8b152d38d5e36690c2ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ghostwriter/collection/zipball/daa113492813308d78e9672114b6d885fe56117f",
-                "reference": "daa113492813308d78e9672114b6d885fe56117f",
+                "url": "https://api.github.com/repos/ghostwriter/collection/zipball/d90268386a32a562c29a8b152d38d5e36690c2ff",
+                "reference": "d90268386a32a562c29a8b152d38d5e36690c2ff",
                 "shasum": ""
             },
             "require": {
-                "ghostwriter/option": "^1.0",
-                "php": ">=8.0,<8.3"
+                "ghostwriter/option": "^1.4",
+                "php": ">=8.1,<8.3"
             },
             "require-dev": {
-                "infection/infection": "^0.26.15",
-                "phpbench/phpbench": "^1.2.6",
-                "phpunit/phpunit": "^9.5.25",
-                "psalm/plugin-phpunit": "^0.17.0",
-                "rector/rector": "^0.14.5",
-                "symplify/easy-coding-standard": "^11.1.10",
-                "vimeo/psalm": "^4.27"
+                "ghostwriter/coding-standard": "dev-main"
             },
             "type": "library",
             "autoload": {
@@ -70,7 +64,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-09-30T13:44:26+00:00"
+            "time": "2023-03-22T20:40:21+00:00"
         },
         {
             "name": "ghostwriter/container",
