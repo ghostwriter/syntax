@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Ghostwriter\Syntax;
 
+use Composer\InstalledVersions;
 use Ghostwriter\Container\Container;
 use Ghostwriter\Container\Contract\ContainerInterface;
 use Ghostwriter\EventDispatcher\Contract\ListenerProviderInterface;
@@ -61,7 +62,7 @@ use function sprintf;
 
     $container->build(SingleCommandApplication::class)
         ->setName('Syntax - Lexical Analysis library for PHP. #BlackLivesMatter✊🏾')
-        ->setVersion('1.0.0')
+        ->setVersion(InstalledVersions::getPrettyVersion('ghostwriter/syntax'))
         ->setDescription('Parse a PHP file and render the abstract syntax tree (AST).')
         ->addArgument('file', InputArgument::REQUIRED, 'The file to parse.')
         ->addOption(
