@@ -1,2 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="4.22.0@fc2c6ab4d5fa5d644d8617089f012f3bb84b8703"/>
+<files psalm-version="5.9.0@8b9ad1eb9e8b7d3101f949291da2b9f7767cd163">
+  <file src="src/CharacterCodes.php">
+    <UnusedClass>
+      <code>CharacterCodes</code>
+    </UnusedClass>
+  </file>
+  <file src="src/Contract/Parser/VisitorInterface.php">
+    <UnusedClass>
+      <code>VisitorInterface</code>
+    </UnusedClass>
+  </file>
+  <file src="src/Event/ConsoleEvent.php">
+    <MissingTemplateParam>
+      <code>EventInterface</code>
+    </MissingTemplateParam>
+    <PossiblyUnusedMethod>
+      <code>__construct</code>
+      <code>getInput</code>
+      <code>getOutput</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Lexer/Token/Token.php">
+    <ImpureMethodCall>
+      <code>getTextLength</code>
+      <code>getTriviaLength</code>
+    </ImpureMethodCall>
+    <InvalidReturnStatement>
+      <code><![CDATA[[
+            'kind' => self::getTokenKindNameFromValue($this->kind),
+            'start' => $this->start,
+            'offset' => $this->offset,
+            'length' => $this->length,
+        ]]]></code>
+    </InvalidReturnStatement>
+    <InvalidReturnType>
+      <code>array{kind: int|string, width: int, trivia: int, start: int}</code>
+    </InvalidReturnType>
+    <ReferenceConstraintViolation>
+      <code>$mapToKindName</code>
+    </ReferenceConstraintViolation>
+    <UnevaluatedCode>
+      <code><![CDATA[return $this->getTriviaLength() + $this->getTextLength();]]></code>
+    </UnevaluatedCode>
+    <UnusedClass>
+      <code>Token</code>
+    </UnusedClass>
+  </file>
+  <file src="src/Listener/ConsoleEventListener.php">
+    <ForbiddenCode>
+      <code>var_dump($event)</code>
+    </ForbiddenCode>
+    <UnusedClass>
+      <code>ConsoleEventListener</code>
+    </UnusedClass>
+  </file>
+  <file src="src/Parser/DocumentUri.php">
+    <UnusedClass>
+      <code>DocumentUri</code>
+    </UnusedClass>
+  </file>
+  <file src="src/Parser/Location.php">
+    <PossiblyUnusedMethod>
+      <code>__construct</code>
+      <code>getColumn</code>
+      <code>getLine</code>
+      <code>withLineAndColumn</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Parser/SymbolKind.php">
+    <UnusedClass>
+      <code>SymbolKind</code>
+    </UnusedClass>
+  </file>
+  <file src="src/TokenStringMaps.php">
+    <UndefinedConstant>
+      <code>KeywordKind::BinaryReservedWord</code>
+      <code>KeywordKind::BoolReservedWord</code>
+      <code>KeywordKind::BooleanReservedWord</code>
+      <code>KeywordKind::DoubleReservedWord</code>
+      <code>KeywordKind::FloatReservedWord</code>
+      <code>KeywordKind::IntegerReservedWord</code>
+      <code>KeywordKind::IterableReservedWord</code>
+      <code>KeywordKind::MixedReservedWord</code>
+      <code>KeywordKind::NeverReservedWord</code>
+      <code>KeywordKind::ObjectReservedWord</code>
+      <code>KeywordKind::RealReservedWord</code>
+      <code>KeywordKind::StringReservedWord</code>
+      <code>KeywordKind::VoidReservedWord</code>
+      <code>TokenKind::AmpersandAmpersandToken</code>
+      <code>TokenKind::AmpersandEqualsToken</code>
+      <code>TokenKind::AmpersandToken</code>
+      <code>TokenKind::ArrowToken</code>
+      <code>TokenKind::AsteriskAsteriskEqualsToken</code>
+      <code>TokenKind::AsteriskAsteriskToken</code>
+      <code>TokenKind::AsteriskEqualsToken</code>
+      <code>TokenKind::AsteriskToken</code>
+      <code>TokenKind::AtSymbolToken</code>
+      <code>TokenKind::BackslashToken</code>
+      <code>TokenKind::BacktickToken</code>
+      <code>TokenKind::BarBarToken</code>
+      <code>TokenKind::BarEqualsToken</code>
+      <code>TokenKind::BarToken</code>
+      <code>TokenKind::CaretEqualsToken</code>
+      <code>TokenKind::CaretToken</code>
+      <code>TokenKind::CloseBraceToken</code>
+      <code>TokenKind::CloseBracketToken</code>
+      <code>TokenKind::CloseParenToken</code>
+      <code>TokenKind::ColonColonToken</code>
+      <code>TokenKind::ColonToken</code>
+      <code>TokenKind::CommaToken</code>
+      <code>TokenKind::DollarToken</code>
+      <code>TokenKind::DotDotDotToken</code>
+      <code>TokenKind::DotEqualsToken</code>
+      <code>TokenKind::DotToken</code>
+      <code>TokenKind::DoubleArrowToken</code>
+      <code>TokenKind::EqualsEqualsEqualsToken</code>
+      <code>TokenKind::EqualsEqualsToken</code>
+      <code>TokenKind::EqualsToken</code>
+      <code>TokenKind::ExclamationEqualsEqualsToken</code>
+      <code>TokenKind::ExclamationEqualsToken</code>
+      <code>TokenKind::ExclamationToken</code>
+      <code>TokenKind::FalseReservedWord</code>
+      <code>TokenKind::GreaterThanEqualsToken</code>
+      <code>TokenKind::GreaterThanGreaterThanEqualsToken</code>
+      <code>TokenKind::GreaterThanGreaterThanToken</code>
+      <code>TokenKind::GreaterThanToken</code>
+      <code>TokenKind::IntReservedWord</code>
+      <code>TokenKind::LessThanEqualsGreaterThanToken</code>
+      <code>TokenKind::LessThanEqualsToken</code>
+      <code>TokenKind::LessThanGreaterThanToken</code>
+      <code>TokenKind::LessThanLessThanEqualsToken</code>
+      <code>TokenKind::LessThanLessThanToken</code>
+      <code>TokenKind::LessThanToken</code>
+      <code>TokenKind::MinusEqualsToken</code>
+      <code>TokenKind::MinusMinusToken</code>
+      <code>TokenKind::MinusToken</code>
+      <code>TokenKind::NullReservedWord</code>
+      <code>TokenKind::OpenBraceToken</code>
+      <code>TokenKind::OpenBracketToken</code>
+      <code>TokenKind::OpenParenToken</code>
+      <code>TokenKind::PercentEqualsToken</code>
+      <code>TokenKind::PercentToken</code>
+      <code>TokenKind::PlusEqualsToken</code>
+      <code>TokenKind::PlusPlusToken</code>
+      <code>TokenKind::PlusToken</code>
+      <code>TokenKind::QuestionArrowToken</code>
+      <code>TokenKind::QuestionQuestionEqualsToken</code>
+      <code>TokenKind::QuestionQuestionToken</code>
+      <code>TokenKind::QuestionToken</code>
+      <code>TokenKind::ScriptSectionEndTag</code>
+      <code>TokenKind::ScriptSectionEndTag</code>
+      <code>TokenKind::ScriptSectionEndTag</code>
+      <code>TokenKind::ScriptSectionEndTag</code>
+      <code>TokenKind::ScriptSectionStartTag</code>
+      <code>TokenKind::ScriptSectionStartTag</code>
+      <code>TokenKind::ScriptSectionStartTag</code>
+      <code>TokenKind::ScriptSectionStartTag</code>
+      <code>TokenKind::ScriptSectionStartTag</code>
+      <code>TokenKind::ScriptSectionStartWithEchoTag</code>
+      <code>TokenKind::SemicolonToken</code>
+      <code>TokenKind::SlashEqualsToken</code>
+      <code>TokenKind::SlashToken</code>
+      <code>TokenKind::TildeToken</code>
+      <code>TokenKind::TrueReservedWord</code>
+    </UndefinedConstant>
+    <UnusedClass>
+      <code>TokenStringMaps</code>
+    </UnusedClass>
+  </file>
+  <file src="src/Tokenizer.php">
+    <UnusedClass>
+      <code>Tokenizer</code>
+    </UnusedClass>
+  </file>
+</files>
