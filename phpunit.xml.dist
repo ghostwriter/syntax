@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd"
+        xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.1/phpunit.xsd"
         beStrictAboutChangesToGlobalState="true"
         beStrictAboutCoverageMetadata="true"
         beStrictAboutOutputDuringTests="true"
@@ -27,9 +27,6 @@
     </testsuite>
   </testsuites>
   <coverage>
-    <include>
-      <directory suffix=".php">src</directory>
-    </include>
     <report>
       <html outputDirectory=".cache/phpunit/coverage-html"/>
       <clover outputFile=".cache/phpunit/clover.xml"/>
@@ -39,4 +36,9 @@
   <logging>
     <junit outputFile=".cache/phpunit/report.junit.xml"/>
   </logging>
+  <source>
+    <include>
+      <directory suffix=".php">src</directory>
+    </include>
+  </source>
 </phpunit>
