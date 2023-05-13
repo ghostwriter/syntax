@@ -8,8 +8,15 @@
         beStrictAboutTestsThatDoNotTestAnything="true"
         beStrictAboutTodoAnnotatedTests="true"
         bootstrap="vendor/autoload.php"
-        cacheDirectory=".phpunit.cache"
+        cacheDirectory=".cache/phpunit"
+        cacheResult="false"
         colors="true"
+        displayDetailsOnIncompleteTests="true"
+        displayDetailsOnSkippedTests="true"
+        displayDetailsOnTestsThatTriggerDeprecations="true"
+        displayDetailsOnTestsThatTriggerErrors="true"
+        displayDetailsOnTestsThatTriggerNotices="true"
+        displayDetailsOnTestsThatTriggerWarnings="true"
         executionOrder="depends,defects"
         failOnEmptyTestSuite="true"
         failOnIncomplete="true"
@@ -18,27 +25,32 @@
         failOnWarning="true"
         requireCoverageMetadata="true"
         stopOnDefect="true"
+        stopOnError="true"
         stopOnFailure="true"
+        stopOnIncomplete="true"
+        stopOnRisky="true"
+        stopOnSkipped="true"
+        stopOnWarning="true"
         testdox="true"
 >
- <testsuites>
-    <testsuite name="Syntax Test Suite">
-      <directory>tests</directory>
-    </testsuite>
-  </testsuites>
-  <coverage>
-    <report>
-      <html outputDirectory=".cache/phpunit/coverage-html"/>
-      <clover outputFile=".cache/phpunit/clover.xml"/>
-      <text outputFile=".cache/phpunit/coverage.txt"/>
-    </report>
-  </coverage>
-  <logging>
-    <junit outputFile=".cache/phpunit/report.junit.xml"/>
-  </logging>
-  <source>
-    <include>
-      <directory suffix=".php">src</directory>
-    </include>
-  </source>
+    <coverage>
+        <report>
+            <html outputDirectory=".cache/phpunit/coverage-html"/>
+            <clover outputFile=".cache/phpunit/clover.xml"/>
+            <text outputFile=".cache/phpunit/coverage.txt"/>
+        </report>
+    </coverage>
+    <logging>
+        <junit outputFile=".cache/phpunit/report.junit.xml"/>
+    </logging>
+    <source restrictDeprecations="true" restrictNotices="true" restrictWarnings="true">
+        <include>
+            <directory>src</directory>
+        </include>
+    </source>
+    <testsuites>
+        <testsuite name="Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
 </phpunit>
