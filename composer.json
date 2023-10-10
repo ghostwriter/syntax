@@ -44,9 +44,8 @@
     },
     "require-dev": {
         "ghostwriter/coding-standard": "dev-main",
-        "ghostwriter/psalm-plugin": "^0 || ^1.0"
+        "ghostwriter/psalm-plugin": "^0 || ^0.2 || ^0.3 || ^1.0"
     },
-    "replace": {},
     "minimum-stability": "stable",
     "prefer-stable": true,
     "autoload": {
