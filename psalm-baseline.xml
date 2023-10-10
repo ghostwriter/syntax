@@ -11,20 +11,18 @@
     </UnusedClass>
   </file>
   <file src="src/Event/ConsoleEvent.php">
-    <MissingTemplateParam>
-      <code>EventInterface</code>
-    </MissingTemplateParam>
     <PossiblyUnusedMethod>
       <code>__construct</code>
       <code>getInput</code>
       <code>getOutput</code>
     </PossiblyUnusedMethod>
     <UndefinedClass>
-      <code>InputInterface</code>
-      <code>OutputInterface</code>
-      <code>private</code>
-      <code>private</code>
+      <code>EventInterface</code>
     </UndefinedClass>
+    <UnusedProperty>
+      <code>$input</code>
+      <code>$output</code>
+    </UnusedProperty>
   </file>
   <file src="src/Lexer/Token/Token.php">
     <ImpureMethodCall>
@@ -53,11 +51,25 @@
     </UnusedClass>
   </file>
   <file src="src/Listener/ConsoleEventListener.php">
-    <ForbiddenCode>
-      <code>var_dump($event)</code>
-    </ForbiddenCode>
+    <MissingDependency>
+      <code>ConsoleEvent</code>
+    </MissingDependency>
     <UnusedClass>
       <code>ConsoleEventListener</code>
+    </UnusedClass>
+    <UnusedParam>
+      <code>$event</code>
+    </UnusedParam>
+  </file>
+  <file src="src/PHPTokenizer.php">
+    <PossiblyUnusedProperty>
+      <code>$length</code>
+      <code>$offset</code>
+      <code>$start</code>
+      <code>$type</code>
+    </PossiblyUnusedProperty>
+    <UnusedClass>
+      <code>PHPTokenizer</code>
     </UnusedClass>
   </file>
   <file src="src/Parser/DocumentUri.php">
@@ -77,6 +89,14 @@
     <UnusedClass>
       <code>SymbolKind</code>
     </UnusedClass>
+  </file>
+  <file src="src/StringTokenizer.php">
+    <UnusedClass>
+      <code>Tokenizer</code>
+    </UnusedClass>
+    <UnusedParam>
+      <code>$input</code>
+    </UnusedParam>
   </file>
   <file src="src/TokenStringMaps.php">
     <UndefinedConstant>
@@ -175,8 +195,8 @@
     </UnusedClass>
   </file>
   <file src="src/Tokenizer.php">
-    <UnusedClass>
+    <DuplicateClass>
       <code>Tokenizer</code>
-    </UnusedClass>
+    </DuplicateClass>
   </file>
 </files>
