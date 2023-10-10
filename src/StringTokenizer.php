@@ -8,7 +8,7 @@ use Generator;
 use RuntimeException;
 
 /** @see TokenizerTest */
-final class Tokenizer
+final class StringTokenizer
 {
     public function tokenize(string $input): Generator
     {
