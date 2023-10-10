@@ -92,11 +92,8 @@
   </file>
   <file src="src/StringTokenizer.php">
     <UnusedClass>
-      <code>Tokenizer</code>
+      <code>StringTokenizer</code>
     </UnusedClass>
-    <UnusedParam>
-      <code>$input</code>
-    </UnusedParam>
   </file>
   <file src="src/TokenStringMaps.php">
     <UndefinedConstant>
@@ -195,8 +192,8 @@
     </UnusedClass>
   </file>
   <file src="src/Tokenizer.php">
-    <DuplicateClass>
+    <UnusedClass>
       <code>Tokenizer</code>
-    </DuplicateClass>
+    </UnusedClass>
   </file>
 </files>
