@@ -9,7 +9,9 @@ use Ghostwriter\Syntax\TokenKind;
 use JsonSerializable;
 use ReflectionClass;
 use Stringable;
+
 use function array_flip;
+use function mb_substr;
 
 final class Token implements JsonSerializable, Stringable
 {
@@ -74,23 +76,6 @@ final class Token implements JsonSerializable, Stringable
     }
 
     /**
-     * Returns the token kind name as a string, or the token number if the name was not found.
-     */
-    public static function getTokenKindNameFromValue(int $kind): string
-    {
-        /**
-         * A hash map of the format [int $TokenKind => string $TokenName].
-         *
-         * @var null|array<int,string> $mapToKindName
-         */
-        static $mapToKindName = null;
-
-        $mapToKindName ??= array_flip((new ReflectionClass(TokenKind::class))->getConstants());
-
-        return $mapToKindName[$kind] ?? 'Unknown';
-    }
-
-    /**
      * @psalm-mutation-free
      */
     public function getTrivia(string $document): string
@@ -135,5 +120,22 @@ final class Token implements JsonSerializable, Stringable
             'offset' => $this->offset,
             'length' => $this->length,
         ];
+    }
+
+    /**
+     * Returns the token kind name as a string, or the token number if the name was not found.
+     */
+    public static function getTokenKindNameFromValue(int $kind): string
+    {
+        /**
+         * A hash map of the format [int $TokenKind => string $TokenName].
+         *
+         * @var null|array<int,string> $mapToKindName
+         */
+        static $mapToKindName = null;
+
+        $mapToKindName ??= array_flip((new ReflectionClass(TokenKind::class))->getConstants());
+
+        return $mapToKindName[$kind] ?? 'Unknown';
     }
 }
