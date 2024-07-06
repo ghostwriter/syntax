@@ -73,9 +73,9 @@ final class KeywordKind
 
     public const FnKeyword = 0;
 
-    public const ForeachKeyword = 0;
-
     public const ForKeyword = 0;
+
+    public const ForeachKeyword = 0;
 
     public const FunctionKeyword = 0;
 
@@ -135,11 +135,11 @@ final class KeywordKind
 
     public const T_ARRAY_CAST = 298;
 
-    public const T_BOOL_CAST = 296;
-
     public const T_BOOLEAN_AND = 284;
 
     public const T_BOOLEAN_OR = 283;
+
+    public const T_BOOL_CAST = 296;
 
     public const T_CLONE = 305;
 
