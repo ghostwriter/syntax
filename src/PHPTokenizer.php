@@ -6,15 +6,16 @@ namespace Ghostwriter\Syntax;
 
 use Generator;
 use PhpToken;
+
+use function mb_strlen;
 use function str_starts_with;
-use function strlen;
 
 /** @see TokenizerTest */
 final class PHPTokenizer
 {
     private const PHP_OPEN_STRING = '<?php ';
+
     /**
-     * @param string $input
      * @return Generator<int, Token>
      */
     public function tokenize(string $input): Generator
@@ -23,15 +24,14 @@ final class PHPTokenizer
 
         $tokens = PhpToken::tokenize($addOpenTag ? self::PHP_OPEN_STRING . $input : $input);
 
-        if ($addOpenTag)
-        {
+        if ($addOpenTag) {
             unset($tokens[0]);
         }
 
         // The starting position (0-based) in the tokenized string.
         $start = $end = $offset = 0;
-        foreach($tokens as $token) {
-            $end += strlen($token->text);
+        foreach ($tokens as $token) {
+            $end += mb_strlen($token->text);
 
             // One of the T_* constants, or an integer < 256 representing a single-char token.
             yield $start => new Token($token->id, $start, $offset, $end - $start);
@@ -43,7 +43,8 @@ final class PHPTokenizer
     }
 }
 
-class Token {
+final class Token
+{
     public function __construct(
         public int $type,
         public int $start,
