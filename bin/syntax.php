@@ -18,7 +18,11 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\SingleCommandApplication;
 use Symfony\Component\Finder\Finder;
+
+use const STDERR;
+
 use function dirname;
+use function fwrite;
 use function sprintf;
 
 /** @var ?string $_composer_autoload_path */
