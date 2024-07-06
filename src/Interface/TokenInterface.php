@@ -7,4 +7,3 @@ namespace Ghostwriter\Syntax\Interface;
 interface TokenInterface
 {
 }
-
