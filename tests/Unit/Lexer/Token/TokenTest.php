@@ -2,12 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Syntax\Tests\Unit\Lexer\Token;
+namespace Tests\Unit\Lexer\Token;
 
 use Ghostwriter\Syntax\Lexer\Token\Token;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Small;
 use PHPUnit\Framework\TestCase;
+
+use function ltrim;
+use function mb_strlen;
+use function sprintf;
+use function str_repeat;
 
 #[Small]
 #[CoversClass(Token::class)]
