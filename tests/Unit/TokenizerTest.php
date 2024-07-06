@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Syntax\Tests\Unit;
+namespace Tests\Unit;
 
 use Ghostwriter\Syntax\CharacterCodes;
 use Ghostwriter\Syntax\Tokenizer;
 use Ghostwriter\Syntax\TokenKind;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
+
+use function iterator_to_array;
 
 #[CoversClass(Tokenizer::class)]
 /**
