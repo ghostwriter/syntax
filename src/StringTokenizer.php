@@ -7,6 +7,9 @@ namespace Ghostwriter\Syntax;
 use Generator;
 use RuntimeException;
 
+use function mb_strlen;
+use function ord;
+
 /** @see TokenizerTest */
 final class StringTokenizer
 {
