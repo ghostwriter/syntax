@@ -39,7 +39,7 @@
         "php": ">=8.3",
         "ghostwriter/case-converter": "^1.0.0",
         "ghostwriter/collection": "^2.0.0",
-        "ghostwriter/container": "^4.0.2",
+        "ghostwriter/container": "^4.0.3",
         "ghostwriter/event-dispatcher": "^5.0.2",
         "ghostwriter/json": "^3.0.0",
         "ghostwriter/option": "^1.5.1",
