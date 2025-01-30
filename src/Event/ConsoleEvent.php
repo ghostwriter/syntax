@@ -4,15 +4,11 @@ declare(strict_types=1);
 
 namespace Ghostwriter\Syntax\Event;
 
-use Ghostwriter\EventDispatcher\Contract\EventInterface;
-use Ghostwriter\EventDispatcher\Traits\EventTrait;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-final class ConsoleEvent implements EventInterface
+final class ConsoleEvent
 {
-    use EventTrait;
-
     public function __construct(
         private readonly InputInterface $input,
         private readonly OutputInterface $output
