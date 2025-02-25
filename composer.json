@@ -36,7 +36,7 @@
     ],
     "_comment": "#BlackLivesMatter",
     "require": {
-        "php": ">=8.4",
+        "php": "^8.4",
         "ghostwriter/case-converter": "^2.0.0",
         "ghostwriter/collection": "^2.0.0",
         "ghostwriter/container": "^5.0.0",
