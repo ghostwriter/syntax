@@ -58,7 +58,10 @@
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests"
-        }
+        },
+        "files": [
+            "tests/bootstrap.php"
+        ]
     },
     "bin": [
         "bin/syntax"
