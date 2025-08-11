@@ -3,7 +3,6 @@
   "description": "[WIP] Lexical Analysis library for PHP"
   "homepage": "https://github.com/ghostwriter/syntax"
   "topics": "generator, ghostwriter, lexer, parser, php, syntax, tokenizer"
-  "private": false
   "has_issues": true
   "has_projects": false
   "has_wiki": false
