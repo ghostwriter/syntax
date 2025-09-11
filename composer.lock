@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d9222b5cf396f0c82c5c9b9180388ea",
+    "content-hash": "5b7e808445e786a1b88bc4d05e8b5e92",
     "packages": [
         {
             "name": "ghostwriter/case-converter",
@@ -2323,16 +2323,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "12.3.9",
+            "version": "12.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "bcaadc492e1424a6ebdd997259b7b3e788e895c0"
+                "reference": "0d401d0df2e3c1703be425ecdc2d04f5c095938d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/bcaadc492e1424a6ebdd997259b7b3e788e895c0",
-                "reference": "bcaadc492e1424a6ebdd997259b7b3e788e895c0",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/0d401d0df2e3c1703be425ecdc2d04f5c095938d",
+                "reference": "0d401d0df2e3c1703be425ecdc2d04f5c095938d",
                 "shasum": ""
             },
             "require": {
@@ -2400,7 +2400,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.3.9"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.3.10"
             },
             "funding": [
                 {
@@ -2424,7 +2424,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-11T06:22:47+00:00"
+            "time": "2025-09-11T10:35:19+00:00"
         },
         {
             "name": "psr/container",
