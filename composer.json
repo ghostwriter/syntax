@@ -66,10 +66,16 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests"
+            "Tests\\": "tests",
+            "Tests\\PHPT\\": "tests/PHPT/",
+            "Tests\\Unit\\": "tests/Unit/",
+            "\\": "tests/Fixture/"
         },
         "files": [
             "tests/bootstrap.php"
+        ],
+        "exclude-from-classmap": [
+            "/tests/"
         ]
     },
     "bin": [
