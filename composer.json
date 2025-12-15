@@ -110,8 +110,8 @@
     },
     "extra": {
         "thanks": {
-            "url": "https://github.com/ghostwriter/syntax",
-            "name": "ghostwriter/syntax"
+            "name": "ghostwriter/syntax",
+            "url": "https://github.com/ghostwriter/syntax"
         }
     }
 }
