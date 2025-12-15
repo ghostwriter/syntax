@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Ghostwriter\Syntax;
 
 use Generator;
+use Ghostwriter\Syntax\Lexer\Token\Token;
 use PhpToken;
 
 use function mb_strlen;
@@ -40,16 +41,5 @@ final class PHPTokenizer
         }
 
         yield $start => new Token(TokenKind::END_OF_FILE, $start, $offset, $end - $start);
-    }
-}
-
-final class Token
-{
-    public function __construct(
-        public int $type,
-        public int $start,
-        public int $offset,
-        public int $length,
-    ) {
     }
 }
