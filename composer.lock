@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e03c6915743e8bd287b2231b806434b",
+    "content-hash": "d14919cb1298fbdc0ea56824609f474e",
     "packages": [
         {
             "name": "ghostwriter/case-converter",
@@ -892,12 +892,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ghostwriter/coding-standard.git",
-                "reference": "02f274ccc340183f6e0ea85c639294e840692ddd"
+                "reference": "4aa66bfd50cef307061744afde4006e23062b258"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ghostwriter/coding-standard/zipball/02f274ccc340183f6e0ea85c639294e840692ddd",
-                "reference": "02f274ccc340183f6e0ea85c639294e840692ddd",
+                "url": "https://api.github.com/repos/ghostwriter/coding-standard/zipball/4aa66bfd50cef307061744afde4006e23062b258",
+                "reference": "4aa66bfd50cef307061744afde4006e23062b258",
                 "shasum": ""
             },
             "require": {
@@ -949,7 +949,7 @@
                 "infection/infection": "^0.32.6",
                 "mockery/mockery": "^1.6.12",
                 "php": "~8.4.0 || ~8.5.0",
-                "phpunit/phpunit": "^13.1.1",
+                "phpunit/phpunit": "^13.1.3",
                 "symfony/var-dumper": "^8.0.8"
             },
             "conflict": {
@@ -1001,7 +1001,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-13T01:29:28+00:00"
+            "time": "2026-04-13T06:25:03+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
