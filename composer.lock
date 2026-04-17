@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a59c806e03044e91dfb23c95a486c68a",
+    "content-hash": "4d61c76ce3c2e74df320c07f1b1b345c",
     "packages": [
         {
             "name": "ghostwriter/case-converter",
@@ -97,26 +97,36 @@
         },
         {
             "name": "ghostwriter/collection",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ghostwriter/collection.git",
-                "reference": "5599d0f8bbae28fe444bd8d72f328db39b9c5831"
+                "reference": "4a884657ca3f1644e9fee3dc99560a8217834b4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ghostwriter/collection/zipball/5599d0f8bbae28fe444bd8d72f328db39b9c5831",
-                "reference": "5599d0f8bbae28fe444bd8d72f328db39b9c5831",
+                "url": "https://api.github.com/repos/ghostwriter/collection/zipball/4a884657ca3f1644e9fee3dc99560a8217834b4e",
+                "reference": "4a884657ca3f1644e9fee3dc99560a8217834b4e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.3"
+                "ext-mbstring": "*",
+                "php": "~8.4.0 || ~8.5.0"
             },
             "require-dev": {
+                "ext-xdebug": "*",
                 "ghostwriter/coding-standard": "dev-main",
-                "ghostwriter/psalm-plugin": ">=0.2"
+                "mockery/mockery": "^1.6.12",
+                "phpunit/phpunit": "^13.1.6",
+                "symfony/var-dumper": "^8.0.8"
             },
             "type": "library",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/ghostwriter/collection",
+                    "name": "ghostwriter/collection"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Ghostwriter\\Collection\\": "src/"
@@ -141,10 +151,9 @@
                 "ghostwriter"
             ],
             "support": {
-                "docs": "https://github.com/ghostwriter/collection",
-                "forum": "https://github.com/ghostwriter/collection/discussions",
                 "issues": "https://github.com/ghostwriter/collection/issues",
                 "rss": "https://github.com/ghostwriter/collection/releases.atom",
+                "security": "https://github.com/ghostwriter/collection/security/advisories/new",
                 "source": "https://github.com/ghostwriter/collection"
             },
             "funding": [
@@ -153,7 +162,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-22T20:29:16+00:00"
+            "time": "2026-04-17T18:31:40+00:00"
         },
         {
             "name": "ghostwriter/container",
