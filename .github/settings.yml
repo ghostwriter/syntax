@@ -8,14 +8,6 @@
 "repository":
   "name": "syntax"
   "description": "[WIP] Lexical Analysis library for PHP"
-  "topics":
-    - "ghostwriter"
-    - "syntax"
-    - "php"
-    - "generator"
-    - "lexer"
-    - "parser"
-    - "tokenizer"
   "homepage": "https://github.com/ghostwriter/syntax"
   "default_branch": "0.1.x"
   "allow_auto_merge": true
