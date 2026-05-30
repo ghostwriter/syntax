@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ebfefd78252b4dfd3c4c0a5fd6a1e53b",
+    "content-hash": "739506ea30efb50e18cc1fb5de05d4cc",
     "packages": [
         {
             "name": "ghostwriter/case-converter",
@@ -247,16 +247,16 @@
         },
         {
             "name": "ghostwriter/event-dispatcher",
-            "version": "6.1.2",
+            "version": "6.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ghostwriter/event-dispatcher.git",
-                "reference": "617c1ee6cd63407ad9f9932e4a2833fb226f574e"
+                "reference": "f09567008800086371068ff52d6ca418aeabbca8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ghostwriter/event-dispatcher/zipball/617c1ee6cd63407ad9f9932e4a2833fb226f574e",
-                "reference": "617c1ee6cd63407ad9f9932e4a2833fb226f574e",
+                "url": "https://api.github.com/repos/ghostwriter/event-dispatcher/zipball/f09567008800086371068ff52d6ca418aeabbca8",
+                "reference": "f09567008800086371068ff52d6ca418aeabbca8",
                 "shasum": ""
             },
             "require": {
@@ -327,7 +327,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-05-29T20:47:09+00:00"
+            "time": "2026-05-29T22:38:50+00:00"
         },
         {
             "name": "ghostwriter/json",
